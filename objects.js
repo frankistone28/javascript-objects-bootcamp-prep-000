@@ -1,9 +1,9 @@
 var playlist = {"kevin gates" : "Out the mud"};
 
-function updatePlaylist(playlist,artistName,songTitle){
-    return Object.assign{{},playlist,{[artistName] : songTitle}}
+function updatePlaylist(object,artistName,songTitle){
+    return Object.assign{{},object,{[artistName] : songTitle}}
 }
 
-function removeFromPlaylist(playlist,artistName){
-    return delete playlist[artistName];
+function removeFromPlaylist(object,artistName){
+    return delete object[artistName];
 }
